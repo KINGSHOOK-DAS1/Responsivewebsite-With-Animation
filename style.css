@@ -1,3 +1,21 @@
+@keyframes Animation{
+    0%{
+        transform: translateY(0px) , rotate(0deg);
+    }
+
+    25%{
+        transform: translateY(70px) , rotate(180deg);
+    }
+
+    50%{
+        transform: translateY(-70px) , rotate(360deg);
+    }
+
+    0%{
+        transform: translateY(0px) , rotate(0deg);
+    }
+}
+
 *{
    font-style:Arial, Helvetica, sans-serif;
     box-sizing: border-box;
@@ -7,7 +25,7 @@
 
 body{
     background-color: #f7f7f7;
-    
+    overflow-x: hidden;
 }
 
 .mainheader{
@@ -36,6 +54,7 @@ body{
     box-shadow: black 0px 0px 10px;
     transition: transform 0.4s;
     cursor: pointer;
+    box-shadow: plum 0px 0px 20px;
 }
 
 .logo:hover{
@@ -57,6 +76,8 @@ body{
     box-shadow: black 0px 0px 10px;
     font-size: 20px;
     transition: transform 0.4s;
+    background-color: rgb(246, 208, 246);
+    box-shadow: plum 0px 0px 20px;
 }
 
 .nav a:hover{
@@ -72,6 +93,8 @@ body{
     font-size: 20px;
     box-shadow: black 0px 0px 10px;
     transition: transform 0.4s;
+    background-color: rgb(246, 208, 246);
+    box-shadow: plum 0px 0px 20px;
 }
 
 .name:hover{
@@ -124,53 +147,26 @@ body{
     justify-content: center;
 }
 
-.card1{
-    background-color: lightblue;
-    text-align: center;
-    margin: 20px;
-}
-
-.card2{
-    background-color: lightcoral;
-    text-align: center;
-    margin: 20px;
-}
-
-.card3{
-    background-color: lightgreen;
-    text-align: center;
-    margin: 20px;
-}
-
-.card4{
-    background-color: lightpink;
-    text-align: center;
-    margin: 20px;
-}
-
-.card5{
-    background-color: peachpuff;
-    text-align: center;
-    margin: 20px;
-}
-
-.card6{
-    background-color: khaki;
-    text-align: center;
-    margin: 20px;
-}
-
-.card7{
+.cards{
     background-color: plum;
     text-align: center;
     margin: 20px;
+    border-radius: 25px;
+    box-shadow: plum 0px 0px 20px;
+    cursor: pointer;
+   animation-name: Animation;
+   animation-duration: 2s;
+   animation-delay: 0s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   animation-fill-mode: both;
 }
 
-.card8{
-    background-color: powderblue;
-    text-align: center;
-    margin: 20px;
+.cards:hover{
+    animation-play-state: paused;
 }
+
+
 
 .projects{
     display:grid;
@@ -185,6 +181,8 @@ body{
     height: 120px;
     transition: transform 0.5s;
     box-shadow: plum 0px 0px 20px;
+    background-color: rgb(246, 208, 246);
+    border-radius: 40px;
 }
 
 .projects .proj2{
@@ -194,6 +192,8 @@ body{
     height: 120px;
     transition: transform 0.5s;
     box-shadow: plum 0px 0px 20px;
+    background-color: rgb(246, 208, 246);
+    border-radius: 40px;
 }
 
 .projects .proj3{
@@ -203,6 +203,8 @@ body{
     height: 120px;
     transition: transform 0.5s;
     box-shadow: plum 0px 0px 20px;
+    background-color: rgb(246, 208, 246);
+    border-radius: 40px;
 }
 
 .proj1 h2{
